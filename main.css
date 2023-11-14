@@ -5,21 +5,9 @@ html {
   line-height: 1.4;
   scroll-behavior: smooth;
 }
-*,
-html {
-  scroll-behavior: smooth !important;
-}
 body {
   margin: 0;
-}
-
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
+  background-color: #9797a1 !important;
 }
 
 #root {
@@ -31,7 +19,6 @@ video {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
   width: 100%;
   margin: 0;
 }
@@ -41,7 +28,6 @@ video {
 }
 
 .nav-bar ul {
-  position: relative;
   display: flex;
   justify-content: space-evenly;
   margin: 0 0 0 50vw;
@@ -55,7 +41,6 @@ video {
 
 .nav-bar ul > li::after {
   content: "";
-  position: relative;
   display: block;
   width: 100%;
   height: 2px;
@@ -85,7 +70,6 @@ video {
 .viewport-header {
   height: 90vh;
   padding-left: 2em;
-  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -105,7 +89,6 @@ p {
 }
 
 .profile img {
-  position: relative;
   width: 40vw;
 }
 
@@ -113,7 +96,6 @@ p {
   display: none;
   width: 80vw;
   height: 100vh;
-  position: relative;
   align-items: center;
   justify-content: center;
 }
@@ -130,7 +112,6 @@ p {
   align-items: center;
   height: 50vh;
   filter: saturate(0) contrast(1.5);
-  position: relative;
 }
 
 .social {
