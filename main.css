@@ -131,11 +131,11 @@ p {
 }
 
 .page-footer {
+  margin-top: 3rem;
   display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 70vh;
   filter: saturate(0) contrast(1.5);
 }
 
