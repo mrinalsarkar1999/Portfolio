@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  margin: 0;
   background-color: #9797a1 !important;
 }
 
@@ -66,8 +67,13 @@ body {
   text-decoration: none;
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
 .viewport-header {
-  height: 90vh;
+  margin-top: 3rem;
   padding-left: 2em;
   text-align: center;
   display: flex;
@@ -92,16 +98,37 @@ p {
 }
 
 .about {
+  margin-top: 2rem;
   display: none;
   width: 80vw;
-  height: 100vh;
+  height: 70vh;
   align-items: center;
   justify-content: center;
 }
 
-.wrapper {
+.shop {
+  margin-top: 3rem;
+  display: none;
+  width: 90vw;
+  min-height: 80vh;
+  flex-direction: column;
+}
+
+.cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  gap: 5px;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-images {
+  width: 100%;
 }
 
 .page-footer {
@@ -109,7 +136,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 70vh;
   filter: saturate(0) contrast(1.5);
 }
 
@@ -143,4 +170,25 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #9797a1;
+}
+
+@media only screen and (max-width: 720px) {
+  .nav-bar ul {
+    margin: 0;
+  }
+  .nav-links {
+    padding: 1rem 0 0 0;
+  }
+  .viewport-header {
+    padding: 0.5rem;
+  }
+  .profile img {
+    width: 90vw;
+  }
+  .wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  }
 }
