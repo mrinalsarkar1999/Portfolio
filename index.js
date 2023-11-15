@@ -1,21 +1,24 @@
 $(document).ready(function () {
   // $().fadeIn(900);
-  $(".nav-ul").slideDown(1000).css("display", "flex");
-  $(".profile>img").fadeIn(1000);
-  $("#quote").stop(true, true).animate(
-    {
-      height: "toggle",
-      opacity: "toggle",
-    },
-    1000
-  );
-  $("#summary").stop(true, true).animate(
-    {
-      height: "toggle",
-      opacity: "toggle",
-    },
-    1000
-  );
+
+  setTimeout(() => {
+    $(".nav-ul").slideDown(1000).css("display", "flex");
+    $(".profile>img").fadeIn(1000);
+    $("#quote").stop(true, true).animate(
+      {
+        height: "toggle",
+        opacity: "toggle",
+      },
+      1000
+    );
+    $("#summary").stop(true, true).animate(
+      {
+        height: "toggle",
+        opacity: "toggle",
+      },
+      1000
+    );
+  }, 2000);
 
   // $(".viewport-header").slideDown(1000);
   $("#contact-link").click(function () {
