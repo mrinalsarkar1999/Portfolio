@@ -25,7 +25,7 @@ $(document).ready(function () {
   });
   $("#about-link").click(function () {
     $("#about-link").attr("href", "#about");
-    $(".about").fadeIn(400).css("display", "flex");
+    $(".about").fadeIn(800).css("display", "flex");
   });
   $("#shop-link").click(function () {
     $("#shop-link").attr("href", "#shop");
