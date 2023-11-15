@@ -198,6 +198,7 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem 0 0 0;
   }
   .viewport-header {
+    width: 100vw;
     padding: 0.5rem;
   }
   .profile img {
